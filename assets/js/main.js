@@ -12,4 +12,8 @@ function stopClock() {
 
 window.onload = function () { 
     console.log("Hello, world!");
+    let ana=Math.random();
+
+    console.log(ana);
+
 }
