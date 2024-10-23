@@ -34,3 +34,56 @@ function changeEmojiColor(elem){
     const b = randInt(0, 255);
     elem.style.fill = 'rgb('+ r +',' + g +','+ b + ')';
 }
+
+function isFocused(elem){
+
+    elem.style.fill = '#68c33F';
+}
+
+function isFocused(elem){
+
+    elem.style.fill = 'white';
+}
+
+function throwDie(elem){
+    const rand = ranIndt(0,5);
+    elem.children[0].setAttribute('d',dice[rand]);
+}
+
+function hover(elem){
+
+    const r = randInt(0, 255);
+    const g = randInt(0, 255);
+    const b = randInt(0, 255);
+    elem.style.fill = 'rgb('+ r +',' + g +','+ b + ')';
+}
+
+
+function cambiodefondo(elem){
+
+const miVar = document.getElementsByTagName("main");
+
+miVar[0].style.backgroundImage ="url('../assets/img/colinas.jpg')";
+
+const cabecera = document.getElementsByTagName("header");
+
+cabecera[0].style.backgroundColor = "black";
+
+
+const titulito = document.getElementsByTagName("h1");
+
+titulito[0].style.color = "white";
+
+const abajo = document.getElementsByTagName("footer");
+
+abajo[0].style.backgroundColor = "black";
+
+
+
+const titulobajo = document.getElementsByTagName("h2");
+
+titulobajo[0].style.color = "white";
+
+
+
+}
