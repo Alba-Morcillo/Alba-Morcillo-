@@ -83,7 +83,13 @@ abajo[0].style.backgroundColor = "black";
 const titulobajo = document.getElementsByTagName("h2");
 
 titulobajo[0].style.color = "white";
+   }
 
+if(header.style.backgroundColor == ""){
 
+header.style.backgroundColor = "rgb(43, 46, 54)";
+footer.style.backgroundColor = "rgb(43, 46, 54)";
+header.style.color = "white";
 
 }
+
