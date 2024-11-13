@@ -65,9 +65,9 @@ const miVar = document.getElementsByTagName("main");
 
 miVar[0].style.backgroundImage ="url('../assets/img/colinas.jpg')";
 
-const cabecera = document.getElementsByTagName("header");
 
-cabecera[0].style.backgroundColor = "black";
+
+
 
 
 const titulito = document.getElementsByTagName("h1");
@@ -83,13 +83,32 @@ abajo[0].style.backgroundColor = "black";
 const titulobajo = document.getElementsByTagName("h2");
 
 titulobajo[0].style.color = "white";
+
+const cabecera = document.getElementsByTagName("header")[0];
+
+
+
+//cabecera.style.backgroundColor = "black";
+if(cabecera.style.backgroundColor == ""){
+
+    cabecera.style.backgroundColor = "rgb(43, 46, 54)";
+    cabecera.style.color = "white";
+    abajo.style.backgroundColor = "rgb(43, 46, 54)";
+    header.style.color = "white";
+   
+    }
+    
+
+else if(cabecera.style.backgroundColor == "rgb(43, 46, 54)"){
+
+    cabecera.style.backgroundColor = "white";
+    cabecera.style.color = "black";
+    abajo.style.backgroundColor = "white";
+    header.style.color = "black";
+   
+    }
+
    }
 
-if(header.style.backgroundColor == ""){
 
-header.style.backgroundColor = "rgb(43, 46, 54)";
-footer.style.backgroundColor = "rgb(43, 46, 54)";
-header.style.color = "white";
-
-}
 
